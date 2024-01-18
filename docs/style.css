@@ -1,0 +1,268 @@
+* {
+  font-family: Tahoma, Calibri, Verdana, Geneva, sans-serif;
+}
+
+body {
+  background-color: #242a38;
+}
+
+::selection {
+  background-color: rgba(166, 8, 166, 0.8156862745);
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(94, 93, 93, 0);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(94, 93, 93);
+  border-radius: 14px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(105, 105, 105);
+}
+
+#navbar {
+  background-color: #4e5970;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px;
+  box-shadow: -1px -1px 24px -1px rgba(0, 0, 0, 0.75);
+  cursor: default;
+  user-select: none;
+}
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 16px;
+  transition-duration: 0.2s;
+}
+#navbar a:hover {
+  color: #a608a6;
+  border-bottom: 2px solid #a608a6;
+  padding-bottom: 24px;
+  transition-duration: 0.2s;
+}
+#navbar .active {
+  color: #a608a6;
+  border-bottom: 2px solid #a608a6;
+  padding-bottom: 24px;
+}
+
+.logo {
+  position: absolute;
+  left: 10px;
+  background-image: url("images/icon.png");
+  background-size: 86%;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 12px;
+  margin-top: 2px;
+  cursor: pointer;
+  user-select: none;
+}
+.logo span {
+  font-size: 40px;
+  margin-left: -5px;
+  padding-left: 50px;
+  font-weight: bold;
+  color: #242a38;
+}
+
+.header-content {
+  margin-left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  color: white;
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+.header-content h1 {
+  font-weight: 100;
+  font-size: 44px;
+}
+.header-content span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: justify;
+}
+.header-content a {
+  color: #a608a6;
+}
+
+#cheats {
+  margin: auto;
+  padding-left: 12.5em;
+}
+#cheats .block {
+  width: 350px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+  border-radius: 12px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  transition-duration: 0.2s;
+  user-select: none;
+}
+#cheats .block .title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+#cheats .block .desc {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  font-style: italic;
+}
+#cheats .block:hover {
+  background-size: 110%;
+  transition-duration: 0.2s;
+  box-shadow: 3px 3px 22px 0px rgba(0, 0, 0, 0.75);
+}
+
+#tutorial {
+  margin: auto;
+  padding-left: 12.5em;
+}
+#tutorial .block {
+  width: 350px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+  border-radius: 12px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  transition-duration: 0.2s;
+}
+#tutorial .block .title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+#tutorial .block div {
+  position: absolute;
+  bottom: 0px;
+  background-color: #4e5970;
+  width: 100%;
+  height: 60px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+#tutorial .block a {
+  color: #a608a6;
+  text-decoration: none;
+}
+#tutorial .block .link {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  transition-duration: 0.2s;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+#tutorial .block .link:hover {
+  background-color: rgba(94, 107, 138, 0.3568627451);
+  transition-duration: 0.2s;
+}
+#tutorial .block .button {
+  color: white;
+  background-color: #a608a6;
+  padding: 10px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transition-duration: 0.2s;
+  font-size: 14px;
+}
+#tutorial .block .button:hover {
+  background-color: #920792;
+  transition-duration: 0.2s;
+}
+
+#details {
+  color: white;
+}
+#details img {
+  width: 50%;
+  position: absolute;
+  top: 20em;
+  left: 50%;
+  transform: translate(-50%);
+}
+#details .warning {
+  color: red;
+  margin-bottom: 10px;
+}
+#details .buy {
+  position: absolute;
+  top: 55em;
+  left: 50%;
+  transform: translate(-50%);
+}
+#details #buy-btn {
+  margin-top: 20px;
+}
+#details input[type=email] {
+  color: black;
+  background-color: #4e5970;
+  border: none;
+  width: 300px;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 16px;
+  padding-left: 5px;
+  transition-duration: 0.2s;
+  outline: 1px solid rgba(166, 8, 166, 0);
+}
+#details input[type=email]::placeholder {
+  color: #242a38;
+}
+#details input[type=email]:focus {
+  outline: 1px solid #a608a6;
+  transition-duration: 0.2s;
+}
+#details #agree-email {
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
