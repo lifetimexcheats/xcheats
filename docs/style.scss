@@ -239,25 +239,11 @@ body {
 
 #details {
     color: white;
-
-    img {
-        width: 50%;
-        position: absolute;
-        top: 20em;
-        left: 50%;
-        transform: translate(-50%);
-    }
+    text-align: center;
 
     .warning {
         color: red;
         margin-bottom: 10px;
-    }
-
-    .buy {
-        position: absolute;
-        top: 55em;
-        left: 50%;
-        transform: translate(-50%);
     }
 
     #buy-btn {
@@ -285,11 +271,27 @@ body {
             outline: 1px solid $mainColor;
             transition-duration: 0.2s;
         }
+
     }
 
-   #agree-email {
-    margin-left: 10px;
-   }
+    .cheat-desc {
+        margin-bottom: 70px;
+
+        ul {
+            display: inline-block;
+            text-align: left;
+        }
+    }
+
+    .images {
+        margin-bottom: 70px;
+
+        img {
+            width: 50em;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+    }
 }
 
 .hidden {

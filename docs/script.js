@@ -41,6 +41,7 @@ function checkBuyBtnState() {
         gebi("buy-btn").classList.add("hidden");
     } else {
         gebi("buy-btn").classList.remove("hidden");
+        window.scrollBy(0, 100);
     }
     buyBtnState = !buyBtnState;
 }
