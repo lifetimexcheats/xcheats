@@ -1,5 +1,37 @@
 $mainColor: #a608a6;
 
+/* IBM Plex Mono */
+@font-face {
+    font-family: mono-reg;
+    src: url(fonts/IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: mono-bold;
+    src: url(fonts/IBMPlexMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: mono-italic;
+    src: url(fonts/IBMPlexMono-Italic.ttf);
+}
+
+/* Chakra Petch */
+@font-face {
+    font-family: chakra-reg;
+    src: url(fonts/ChakraPetch-Regular.ttf);
+}
+
+@font-face {
+    font-family: chakra-bold;
+    src: url(fonts/ChakraPetch-Bold.ttf);
+}
+
+@font-face {
+    font-family: chakra-italic;
+    src: url(fonts/ChakraPetch-Italic.ttf);
+}
+
 * {
     font-family: Tahoma, Calibri, Verdana, Geneva, sans-serif;
 }
@@ -31,6 +63,14 @@ body {
     background: rgb(105, 105, 105);
 }
 
+h1 {
+    font-family: chakra-reg;
+}
+
+span {
+    font-family: mono-reg;
+}
+
 #navbar {
     background-color: #4e5970;
     height: 70px;
@@ -44,13 +84,14 @@ body {
     box-shadow: -1px -1px 24px -1px rgba(0,0,0,0.75);
     cursor: default;
     user-select: none;
-
+    
     a {
         color: white;
         text-decoration: none;
         font-size: 16px;
         margin-right: 16px;
         transition-duration: 0.2s;
+        font-family: chakra-reg;
         
         &:hover {
             color: $mainColor;
@@ -86,8 +127,8 @@ body {
         font-size: 40px;
         margin-left: -5px;
         padding-left: 50px;
-        font-weight: bold;
         color: #242a38;
+        font-family: chakra-bold;
     }
 }
 
@@ -105,7 +146,6 @@ body {
     }
 
     span {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 20px;
         font-weight: lighter;
         text-align: justify;
@@ -113,6 +153,10 @@ body {
 
     a {
         color: $mainColor;
+    }
+
+    b {
+        font-family: chakra-bold;
     }
 }
 
@@ -138,8 +182,8 @@ body {
         
         .title {
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 13px;
+            left: 20px;
             font-size: 18px;
             font-weight: 600;
         }
@@ -243,8 +287,15 @@ body {
 
     .warning {
         color: red;
-        margin-bottom: 10px;
+        margin-bottom: 10px;    
     }
+
+    .buy {
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+
 
     #buy-btn {
         margin-top: 20px;
@@ -287,7 +338,8 @@ body {
         margin-bottom: 70px;
 
         img {
-            width: 50em;
+            max-height: 40%;
+            max-width: 40%;
             margin-bottom: 10px;
             border-radius: 4px;
         }

@@ -16,7 +16,7 @@
   color: white;
   text-decoration: none;
   font-size: 8px;
-  margin-right: 16px;
+  margin-right: 5px;
   transition-duration: 0.2s;
 }
 #navbar a:hover {
@@ -45,7 +45,7 @@
   cursor: pointer;
   user-select: none;
   float: left;
-  margin-right: 1.3em;
+  margin-right: 2em;
 }
 .logo span {
   display: none;
