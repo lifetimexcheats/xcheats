@@ -85,13 +85,15 @@ $mainColor: #a608a6;
 }
 
 #cheats {
-    position: absolute;
+    /* position: relative; */
     display: flex;
     justify-content: center;
 
     .block {
-        width: 170px;
-        height: 100px;
+        max-width: 170px;
+        max-height: 100px;
+        min-width: 170px;
+        min-height: 100px;
         margin-right: 20px;
         margin-bottom: 20px;
         border-radius: 20px;
@@ -103,6 +105,7 @@ $mainColor: #a608a6;
         color: white;
         transition-duration: 0.2s;
         user-select: none;
+        float: none;
         
         .title {
             position: absolute;
@@ -112,11 +115,13 @@ $mainColor: #a608a6;
             font-weight: 600;
             margin-left: -10px;
             padding-left: 20px;
+            padding-right: 15px;
             padding-top: 10px;
             padding-bottom: 10px;
-            width: 150px;
             border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 0px;
+            width: max-content;
         }
         
         .desc {
