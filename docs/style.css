@@ -63,6 +63,10 @@ span {
   font-family: mono-reg;
 }
 
+b {
+  font-family: chakra-bold;
+}
+
 #navbar {
   background-color: #4e5970;
   height: 70px;
@@ -145,7 +149,8 @@ span {
 
 #cheats {
   margin: auto;
-  padding-left: 12.5em;
+  display: flex;
+  justify-content: center;
 }
 #cheats .block {
   width: 350px;
@@ -165,17 +170,28 @@ span {
 }
 #cheats .block .title {
   position: absolute;
-  top: 13px;
   left: 20px;
   font-size: 18px;
   font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.6980392157);
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 331px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 #cheats .block .desc {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 0px;
+  right: 0px;
   font-size: 12px;
   font-style: italic;
+  background-color: rgba(0, 0, 0, 0.6980392157);
+  padding: 10px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 #cheats .block:hover {
   background-size: 110%;
