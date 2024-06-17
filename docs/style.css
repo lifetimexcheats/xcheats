@@ -67,6 +67,10 @@ b {
   font-family: chakra-bold;
 }
 
+a {
+  color: #a608a6;
+}
+
 #navbar {
   background-color: #4e5970;
   height: 70px;
