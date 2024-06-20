@@ -152,9 +152,13 @@ a {
 }
 
 #cheats {
-  margin: auto;
-  display: flex;
-  justify-content: center;
+  /* margin: auto; */
+  /* display: block;
+  justify-content: center; */
+  /* position: absolute;
+  left: 50%;
+  transform: translate(-50%); */
+  margin-left: 3em;
 }
 #cheats .block {
   width: 350px;
@@ -169,7 +173,7 @@ a {
   cursor: pointer;
   position: relative;
   color: white;
-  transition-duration: 0.2s;
+  transition-duration: 0.5s;
   user-select: none;
 }
 #cheats .block .title {
@@ -199,8 +203,7 @@ a {
   border-top-left-radius: 20px;
 }
 #cheats .block:hover {
-  background-size: 110%;
-  transition-duration: 0.2s;
+  transition-duration: 0.5s;
   box-shadow: 3px 3px 22px 0px rgba(0, 0, 0, 0.75);
 }
 
