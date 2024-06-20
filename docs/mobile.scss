@@ -86,7 +86,7 @@ $mainColor: #a608a6;
 
 #cheats {
     /* position: relative; */
-    display: flex;
+    display: grid;
     justify-content: center;
 
     .block {

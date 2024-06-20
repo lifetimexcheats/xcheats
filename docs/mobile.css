@@ -76,7 +76,7 @@
 
 #cheats {
   /* position: relative; */
-  display: flex;
+  display: grid;
   justify-content: center;
 }
 #cheats .block {

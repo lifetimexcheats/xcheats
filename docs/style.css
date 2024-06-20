@@ -164,7 +164,7 @@ a {
   float: left;
   border-radius: 20px;
   background-position: center;
-  background-size: 105%;
+  background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
   position: relative;
@@ -175,6 +175,7 @@ a {
 #cheats .block .title {
   position: absolute;
   left: 20px;
+  top: 0px;
   font-size: 18px;
   font-weight: 600;
   background-color: rgba(0, 0, 0, 0.6980392157);
@@ -182,9 +183,9 @@ a {
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 331px;
   border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-right: 20px;
 }
 #cheats .block .desc {
   position: absolute;
